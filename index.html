@@ -1,64 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prasanth Gandham | Embedded Engineer</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
-            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
         }
+
         header {
-            background-color: #222;
-            color: white;
-            padding: 20px;
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
         }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #94a3b8;
+        }
+
         section {
-            background: white;
-            margin: 20px;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 20px;
-            border-radius: 10px;
         }
-        h1, h2 {
-            margin: 10px;
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
         }
+
+        h2 {
+            color: #38bdf8;
+        }
+
         ul {
-            list-style: none;
-            padding: 0;
+            padding-left: 20px;
         }
-        li {
-            padding: 5px;
+
+        .skills span {
+            display: inline-block;
+            background: #334155;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
         }
-        .contact {
-            background: #007BFF;
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
+
+        .cta {
+            text-align: center;
+            padding: 30px;
+            background: #38bdf8;
+            color: black;
+            border-radius: 12px;
+        }
+
+        a {
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Prasanth Gandham</h1>
-    <p>Embedded Firmware Engineer</p>
+    <p class="tagline">
+        Senior Embedded Firmware Engineer | 14+ Years | AUTOSAR • RTOS • IoT • RF
+    </p>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <ul>
-        <li>📍 Bengaluru</li>
-        <li>📷 Photography Enthusiast</li>
-        <li>🍳 Cooking & 🚗 Driving</li>
-    </ul>
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am an embedded systems engineer with 14+ years of experience in firmware development,
+            AUTOSAR, and real-time systems. I specialize in low-level development, debugging, and
+            building reliable systems.
+        </p>
+        <p>
+            Currently focusing on IoT, ESP32, RF systems, and modern embedded Linux concepts.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Core Skills</h2>
+        <div class="skills">
+            <span>Embedded C</span>
+            <span>C++</span>
+            <span>FreeRTOS</span>
+            <span>AUTOSAR</span>
+            <span>ESP32</span>
+            <span>ARM / AURIX</span>
+            <span>Device Drivers</span>
+            <span>SPI / I2C / UART / CAN</span>
+            <span>MQTT</span>
+            <span>BLE / Wi-Fi</span>
+            <span>RF Systems</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>ESP32 IoT System using MQTT and Wi-Fi</li>
+            <li>AUTOSAR MCAL Driver Development</li>
+            <li>RF Transceiver (ATA8510) Integration</li>
+            <li>FreeRTOS Task & IPC Implementations</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>What I Offer</h2>
+        <ul>
+            <li>Embedded Firmware Development</li>
+            <li>RTOS & AUTOSAR Consulting</li>
+            <li>IoT System Design</li>
+            <li>Mentoring & Teaching (Embedded Systems)</li>
+        </ul>
+    </div>
+
+    <div class="cta">
+        <h2>Open to Opportunities</h2>
+        <p>
+            Looking for Embedded, IoT, or RF-related roles (Full-time / Remote / Consulting)
+        </p>
+        <p>Email: prashanthknl@gmail.com</p>
+        <p>
+            GitHub: <a href="https://github.com/yourusername" target="_blank">View Projects</a>
+        </p>
+    </div>
+
 </section>
 
-<section class="contact">
-    <h2>Contact</h2>
-    <p>📞 9482868699</p>
-    <p>📧 prasanthgandham@icloud.com</p>
-</section>
+<footer>
+    © 2026 Prasanth Gandham
+</footer>
 
 </body>
 </html>
