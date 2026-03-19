@@ -8,38 +8,30 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: Arial, sans-serif;
             background: #0f172a;
             color: #e2e8f0;
+            text-align: center;
         }
 
         header {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
+            background: #1e293b;
+            padding: 40px 20px;
         }
 
         h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
+            margin: 10px;
         }
 
         .tagline {
-            font-size: 18px;
             color: #94a3b8;
         }
 
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .card {
             background: #1e293b;
+            margin: 20px;
             padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
+            border-radius: 10px;
         }
 
         h2 {
@@ -47,7 +39,12 @@
         }
 
         ul {
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 6px;
         }
 
         .skills span {
@@ -59,23 +56,21 @@
             font-size: 14px;
         }
 
-        .cta {
-            text-align: center;
-            padding: 30px;
+        .contact {
             background: #38bdf8;
             color: black;
-            border-radius: 12px;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         a {
-            color: #0f172a;
+            color: black;
             text-decoration: none;
             font-weight: bold;
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
+            margin: 20px;
             color: #64748b;
         }
     </style>
@@ -86,72 +81,65 @@
 <header>
     <h1>Prasanth Gandham</h1>
     <p class="tagline">
-        Senior Embedded Firmware Engineer | 14+ Years | AUTOSAR • RTOS • IoT • RF
+        Senior Embedded Firmware Engineer | RF • AUTOSAR • RTOS • IoT
     </p>
 </header>
 
 <section>
+    <h2>About Me</h2>
+    <p>
+        Embedded firmware engineer with 14+ years of experience in automotive and RF-based systems.
+        Strong expertise in AUTOSAR, MCAL, and real-time embedded development.
+    </p>
+    <p>
+        Worked on secure car access systems (RKE, PEPS, IMMO) using encrypted RF communication and
+        UWB-based ranging. Currently exploring IoT systems using ESP32, MQTT, and wireless connectivity.
+    </p>
+</section>
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            I am an embedded systems engineer with 14+ years of experience in firmware development,
-            AUTOSAR, and real-time systems. I specialize in low-level development, debugging, and
-            building reliable systems.
-        </p>
-        <p>
-            Currently focusing on IoT, ESP32, RF systems, and modern embedded Linux concepts.
-        </p>
+<section>
+    <h2>Core Skills</h2>
+    <div class="skills">
+        <span>Embedded C</span>
+        <span>C++</span>
+        <span>AUTOSAR</span>
+        <span>MCAL</span>
+        <span>FreeRTOS</span>
+        <span>RF (LF/UHF/UWB)</span>
+        <span>ESP32</span>
+        <span>SPI / I2C / UART / CAN / LIN</span>
+        <span>MQTT</span>
+        <span>BLE / Wi-Fi</span>
     </div>
+</section>
 
-    <div class="card">
-        <h2>Core Skills</h2>
-        <div class="skills">
-            <span>Embedded C</span>
-            <span>C++</span>
-            <span>FreeRTOS</span>
-            <span>AUTOSAR</span>
-            <span>ESP32</span>
-            <span>ARM / AURIX</span>
-            <span>Device Drivers</span>
-            <span>SPI / I2C / UART / CAN</span>
-            <span>MQTT</span>
-            <span>BLE / Wi-Fi</span>
-            <span>RF Systems</span>
-        </div>
-    </div>
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li>Secure Car Access System (RKE / PEPS / IMMO)</li>
+        <li>UWB-based Distance Measurement for Anti-Relay Protection</li>
+        <li>433 MHz RF Communication using ATA8510</li>
+        <li>AUTOSAR MCAL Driver Development</li>
+        <li>ESP32 IoT System using MQTT (Learning Phase)</li>
+    </ul>
+</section>
 
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>ESP32 IoT System using MQTT and Wi-Fi</li>
-            <li>AUTOSAR MCAL Driver Development</li>
-            <li>RF Transceiver (ATA8510) Integration</li>
-            <li>FreeRTOS Task & IPC Implementations</li>
-        </ul>
-    </div>
+<section>
+    <h2>What I Offer</h2>
+    <ul>
+        <li>Embedded Firmware Development</li>
+        <li>RF and Automotive System Development</li>
+        <li>RTOS and AUTOSAR Consulting</li>
+        <li>IoT Prototyping (ESP32, MQTT)</li>
+    </ul>
+</section>
 
-    <div class="card">
-        <h2>What I Offer</h2>
-        <ul>
-            <li>Embedded Firmware Development</li>
-            <li>RTOS & AUTOSAR Consulting</li>
-            <li>IoT System Design</li>
-            <li>Mentoring & Teaching (Embedded Systems)</li>
-        </ul>
-    </div>
-
-    <div class="cta">
-        <h2>Open to Opportunities</h2>
-        <p>
-            Looking for Embedded, IoT, or RF-related roles (Full-time / Remote / Consulting)
-        </p>
-        <p>Email: prashanthknl@gmail.com</p>
-        <p>
-            GitHub: <a href="https://github.com/yourusername" target="_blank">View Projects</a>
-        </p>
-    </div>
-
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: prashanthknl@gmail.com</p>
+    <p>
+        <a href="https://github.com/prasanthgandham" target="_blank">GitHub Profile</a>
+    </p>
 </section>
 
 <footer>
